@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<HEAD>
+  <header>
+    <h1>
+      <P>Os Pokemons inicias de cada geração</P>
+    </h1>
+  </header>
+  <script>
+
+  </script>
+  <style>
+    /* CENTRALIZAÇÃO DO SITE E FUNCIONALIDADE*/
+    header{
+      text-align: center;
+      color:white;
+    }
+    body{
+      height: 100vh;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color:white;
+      text-align: center;
+    }
+    img{
+      display:flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      width: 400px;
+      height: 400px;
+      padding:10px;
+      border: 10px solid white;
+      border-radius: 30px;
+    }
+    /* CRIAÇÃO DAS DIV'S*/
+    .gen1{
+      color:white;
+      text-align: center;
+      display:flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-evenly;
+    }
+
+    .gen2{
+      color:white;
+      text-align: center;
+      display:flex;
+      flex-direction: row;
+      align-items:center;
+      justify-content: space-evenly;
+    }
+    .gen3{
+      color:white;
+      text-align: center;
+      display:flex;
+      flex-direction: row;
+      align-items:center;
+      justify-content: space-evenly;
+    }
+
+
+    /* ANIMAÇÕES E TUDO MAIS PARA A 1° GERAÇÃO*/
+
+    /*ANIMAÇÃO DO BULBASSAURO*/
+
+    .animacaobulba{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textbulba{
+      visibility: hidden;
+      background-color: #62d5b4;
+      border-radius: 5px;
+      border: 10px solid #83eec5;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaobulba:hover{
+      transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform:translateX(50px)
+    }
+    .animacaobulba:hover .textbulba{
+      opacity:1;
+      visibility: visible;
+    }
+
+    /*ANIMAÇÃO DO CHARMANDER*/
+
+
+    .animacaocharmander{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textcharmander{
+      visibility: hidden;
+      background-color: #de5239;
+      border-radius: 5px;
+      border: 10px solid #8b2900;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaocharmander:hover .textcharmander{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaocharmander:hover{
+      transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform:translateY(50px)
+    }
+    .animacaosquirtle{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+
+    
+    /*ANIMAÇÃO DO SQUIRTLE*/
+
+
+
+    .textsquirtle{
+      visibility: hidden;
+      background-color: #8bc5cd;
+      border-radius: 5px;
+      border: 10px solid #297383;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaosquirtle:hover .textsquirtle{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaosquirtle:hover{
+      transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform:translateX(-50px)
+    }
+
+
+    
+    /* ANIMAÇÕES E TUDO MAIS PARA A 2° GEN*/
+
+
+    /*ANIMAÇÃO DO CHIKORITA*/
+    .animacaochiko{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textchiko{
+      visibility: hidden;
+      background-color: #83e631;
+      border-radius: 5px;
+      border: 10px solid #6ab429;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaochiko:hover{
+      transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform:translateX(50px)
+    }
+    .animacaochiko:hover .textchiko{
+      opacity:1;
+      visibility: visible;
+    }
+
+    /*ANIMAÇÃO DO CYNDAQUIL*/
+
+
+    .animacaocynda{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textcynda{
+      visibility: hidden;
+      background-color: #ff5a00;
+      border-radius: 5px;
+      border: 10px solid #ffeea4;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaocynda:hover .textcynda{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaocynda:hover{
+      transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform:translateY(50px)
+    }
+
+
+    /*ANIMAÇÃO DO TOTODILE*/
+
+
+    .animacaototo{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .texttoto{
+      visibility: hidden;
+      background-color: #3183c5;
+      border-radius: 5px;
+      border: 10px solid #297383;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaototo:hover .texttoto{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaototo:hover{
+      transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform:translateX(-50px)
+    }
+
+
+
+    /* ANIMAÇÃO PARA A 3° GEN */
+
+
+    /*ANIMAÇÃO DO TREECKO*/
+
+
+    .animacaotreecko{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .texttreecko{
+      visibility: hidden;
+      background-color: #94b439;
+      border-radius: 5px;
+      border: 10px solid #527339;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaotreecko:hover{
+      transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform:translateX(50px)
+    }
+    .animacaotreecko:hover .texttreecko{
+      opacity:1;
+      visibility: visible;
+    }
+
+    /*ANIMAÇÃO DO TORCHIC*/
+    
+    .animacaotor{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .texttor{
+      visibility: hidden;
+      background-color: #e65a20;
+      border-radius: 5px;
+      border: 10px solid #f6de6a;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaotor:hover .texttor{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaotor:hover{
+      transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform:translateY(50px)
+    }
+
+    /*ANIMAÇÃO DO MUDKIP*/
+
+    .animacaomudkip{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textmudkip{
+      visibility: hidden;
+      background-color: #7bcdee;
+      border-radius: 5px;
+      border: 10px solid #9cbde6;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaomudkip:hover .textmudkip{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaomudkip:hover{
+      transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform:translateX(-50px)
+    }
+
+
+        /* ANIMAÇÃO PARA A 4° GEN */
+
+
+    /*ANIMAÇÃO DO TURTWIG*/
+
+
+    .animacaoturt{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textturt{
+      visibility: hidden;
+      background-color: #94ac5a;
+      border-radius: 5px;
+      border: 10px solid #c5bd39;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaoturt:hover{
+      transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform:translateX(50px)
+    }
+    .animacaoturt:hover .textturt{
+      opacity:1;
+      visibility: visible;
+    }
+
+    /*ANIMAÇÃO DO CHIMCHAR*/
+    
+    .animacaochim{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textchim{
+      visibility: hidden;
+      background-color: #de8300;
+      border-radius: 5px;
+      border: 10px solid #deb452;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaochim:hover .textchim{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaochim:hover{
+      transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform:translateY(50px)
+    }
+
+    /*ANIMAÇÃO DO PIPLUP*/
+
+    .animacaopip{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textpip{
+      visibility: hidden;
+      background-color: #20629c;
+      border-radius: 5px;
+      border: 10px solid #ffffff;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaopip:hover .textpip{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaopip:hover{
+      transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform:translateX(-50px)
+    }
+
+
+            /* ANIMAÇÃO PARA A 5° GEN */
+
+
+    /*ANIMAÇÃO DO SNIVY*/
+
+
+    .animacaosnivy{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textsnivy{
+      visibility: hidden;
+      background-color: #94ac5a;
+      border-radius: 5px;
+      border: 10px solid #c5bd39;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaosnivy:hover{
+      transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform:translateX(50px)
+    }
+    .animacaosnivy:hover .textsnivy{
+      opacity:1;
+      visibility: visible;
+    }
+
+    /*ANIMAÇÃO DO CHIMCHAR*/
+    
+    .animacaotepig{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .texttepig{
+      visibility: hidden;
+      background-color: #de8300;
+      border-radius: 5px;
+      border: 10px solid #deb452;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaotepig:hover .texttepig{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaotepig:hover{
+      transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform:translateY(50px)
+    }
+
+    /*ANIMAÇÃO DO OSHAWOTT*/
+
+    .animacaoosha{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textosha{
+      visibility: hidden;
+      background-color: #29bdc5;
+      border-radius: 5px;
+      border: 10px solid #c5c5cd;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaoosha:hover .textosha{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaoosha:hover{
+      transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform:translateX(-50px)
+    }
+
+            /* ANIMAÇÃO PARA A 6° GEN */
+
+
+    /*ANIMAÇÃO DO CHESPIN*/
+
+
+    .animacaochespin{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textchespin{
+      visibility: hidden;
+      background-color: #94ac5a;
+      border-radius: 5px;
+      border: 10px solid #c5bd39;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaochespin:hover{
+      transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform:translateX(50px)
+    }
+    .animacaochespin:hover .textchespin{
+      opacity:1;
+      visibility: visible;
+    }
+
+    /*ANIMAÇÃO DO FANNEKIN*/
+    
+    .animacaofanne{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textfanne{
+      visibility: hidden;
+      background-color: #de8300;
+      border-radius: 5px;
+      border: 10px solid #deb452;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaofanne:hover .textfanne{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaofanne:hover{
+      transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform:translateY(50px)
+    }
+
+    /*ANIMAÇÃO DO FROOKIE*/
+
+    .animacaofrookie{
+      transition: .5s, color .5s;
+        -webkit-transition: .5s, color .5s;
+        -moz-transition: .5s, color .10s;
+    }
+    .textfrookie{
+      visibility: hidden;
+      background-color: #29bdc5;
+      border-radius: 5px;
+      border: 10px solid #c5c5cd;
+      opacity: 0;
+      justify-content: center;
+      position:absolute;
+      padding: 10px;
+      width:auto;
+      transition: opacity 0.3s ease;
+    }
+    .animacaofrookie:hover .textfrookie{
+      opacity:1;
+      visibility:visible;
+    }
+    .animacaofrookie:hover{
+      transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+        -moz-transform:translateX(-50px)
+    }
+
+
+    
+  </style>
+</HEAD>
+<body>
+    <!--1° GERAÇÃO DOS POKEMONS (BULBASSAURO, CHARMANDER, SQUIRTLE)-->
+  <br>
+  <hr>
+  <br>
+  <p><strong>KANTO</strong></p>
+  <div class="gen1">
+    <section class="animacaobulba">
+      <img src="Bulbasaur-Pokemon-No-Background-Clip-Art.png">
+      <p class="textbulba">Bulbassauro é um Pokémon do tipo Grama/Veneno.
+         Ele é um dos três Pokémon iniciais da região de Kanto. Bulbassauro é conhecido por ter uma semente de planta em suas costas desde o nascimento. 
+         Essa semente cresce à medida que o Bulbassauro evolui. Ele é um Pokémon amigável e calmo, mas também pode ser um adversário formidável em batalhas com seus ataques de Grama e Veneno.
+         Bulbassauro é um companheiro leal e confiável, pronto para embarcar em grandes jornadas ao lado de seu Treinador.</p>
+    </section>
+    <section class="animacaocharmander">
+      <img src="CHARMANDER.png">
+      <p class="textcharmander">"Charmander é um Pokémon do tipo Fogo.
+        Conhecido por sua chama ardente que queima na ponta de sua cauda. Ele é um dos três Pokémon iniciais da região de Kanto. Charmander é um Pokémon valente e determinado, sempre em busca de desafios.
+        Com o tempo, ele evolui para Charmeleon e, posteriormente, para Charizard, uma poderosa forma dragão com asas que lhe permite voar pelos céus. 
+        Charmander é um companheiro leal e corajoso, pronto para enfrentar qualquer batalha com seus poderosos ataques de fogo. Seu espírito ardente o torna um Pokémon favorito de muitos Treinadores.</p>
+    </section>
+    <section class="animacaosquirtle">
+      <img src="squirtle.png">
+      <p class="textsquirtle">Squirtle é um Pokémon do tipo Água e um dos três Pokémon iniciais da região de Kanto.
+        Ele é conhecido por sua carapaça resistente e por sua habilidade em criar jatos de água poderosos. Squirtle é um Pokémon amigável e dócil, mas também possui uma natureza determinada e competitiva.
+        Conforme evolui, Squirtle se torna Wartortle e, em seguida, Blastoise, um Pokémon imponente com poderosos canhões de água em suas costas. Squirtle é um excelente nadador e se sente em casa tanto em terra quanto na água.
+        Ele é um parceiro leal e confiável em batalhas, usando sua habilidade aquática para superar desafios. Se você precisar de um amigo leal e habilidoso, Squirtle é a escolha perfeita!</p>
+      </div>
+        <!-- 2° GERAÇÃO DOS POKEMONS (CHIKORITA, CYNDAQUIL, TOTODILE)-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <hr>
+      <br>
+      <p><strong>JOTOH</strong></p>
+  <div class="gen2">
+    </section>
+    <section class="animacaochiko">
+      <img src="Chikorita-Pokemon-Transparent-File.png.png">
+      <p class="textchiko">Chikorita é um Pokémon do tipo Grama e é um dos Pokémon iniciais da região de Johto. Com sua aparência adorável, Chikorita é conhecida por sua folhagem exuberante em volta do pescoço. Ela emana uma energia natural e possui um vínculo especial com a natureza ao seu redor. Chikorita é gentil, afetuosa e está sempre pronta para ajudar seus amigos. Ao evoluir, ela se torna Bayleef e, posteriormente, Meganium, um Pokémon majestoso e cheio de graça. Chikorita possui habilidades de cura e pode utilizar ataques de Grama poderosos em batalhas. Com seu espírito sereno e poder vegetal, Chikorita é uma companheira leal e valiosa para qualquer Treinador que aprecie a beleza da natureza..</p>
+    </section>
+    <section class="animacaocynda">
+      <img src="Cyndaquil-Pokemon-PNG-HD-Quality.png">
+      <p class="textcynda">Cyndaquil é um Pokémon do tipo Fogo da região de Johto, conhecido por sua pelagem coberta de chamas. Esse pequeno Pokémon é tímido por natureza, mas possui uma chama ardente que queima em sua parte traseira. Ao se sentir ameaçado, Cyndaquil é capaz de soltar rajadas de fogo para se proteger. Conforme evolui, Cyndaquil se transforma em Quilava e, posteriormente, em Typhlosion, um poderoso Pokémon fogo com uma chama imensa em suas costas. Apesar de sua timidez, Cyndaquil é um parceiro leal e está disposto a enfrentar desafios ao lado de seu Treinador. Com suas habilidades de fogo e determinação, Cyndaquil pode se tornar uma poderosa chama em batalhas e aquecer o coração de qualquer Treinador!</p>
+    </section>
+    <section class="animacaototo">
+      <img src="totodile.png">
+      <p class="texttoto">Totodile é um Pokémon do tipo Água e faz parte da segunda geração de Pokémon da região de Johto. Com uma aparência fofa e carismática, Totodile é conhecido por sua mandíbula poderosa e dentes afiados. Ele adora nadar e se divertir na água, utilizando sua cauda para se movimentar rapidamente. Totodile é um Pokémon energético e brincalhão, sempre pronto para se aventurar e explorar. Ao evoluir, ele se torna Croconaw e, em seguida, Feraligatr, um Pokémon imponente e forte. Totodile possui um espírito competitivo e está sempre disposto a enfrentar desafios. Com suas habilidades aquáticas e sua personalidade animada, Totodile é um parceiro empolgante para qualquer Treinador em busca de grandes aventuras!</p>
+    </section>
+  </div>
+        <!-- 3° GERAÇÃO DOS POKEMONS (TREECKO, TORCHIC, MUDKIP)-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <p><strong>HOENN</strong></p>
+  <div class="gen3">
+  </section>
+  <section class="animacaotreecko">
+    <img src="Treecko-Pokemon-Transparent-Image.png">
+    <p class="texttreecko">Treecko é um dos Pokémon iniciais da região de Hoenn, introduzido na terceira geração dos jogos Pokémon (Ruby, Sapphire e Emerald). Ele é um Pokémon do tipo Planta, e sua aparência é inspirada em um pequeno lagarto verde com uma cauda grossa e folhas em forma de agulha em sua cabeça.
+      
+      Quando evolui para Grovyle, no nível 16, e posteriormente para Sceptile, no nível 36, Treecko se torna ainda mais poderoso. Sceptile é conhecido por sua velocidade impressionante e por suas habilidades de batalha. Além disso, ele tem uma conexão especial com a energia natural, sendo capaz de canalizá-la em seus ataques.
+      
+      Treecko é considerado um Pokémon amigável e de personalidade calma. Ele é conhecido por sua astúcia, inteligência e espírito competitivo. Embora possa ser inicialmente reservado, Treecko constrói fortes laços com seus treinadores à medida que ganha confiança neles.</p>
+  </section>
+  <section class="animacaotor">
+    <img src="torchic.png">
+    <p class="texttor">Torchic é um Pokémon inicial da região de Hoenn, introduzido nos jogos Pokémon Ruby, Sapphire e Emerald. Ele é um Pokémon do tipo Fogo, caracterizado por sua aparência fofa e enérgica.
+
+      Torchic se assemelha a um pequeno pássaro amarelo com uma penugem laranja no topo da cabeça. Apesar de sua aparência adorável, ele possui uma chama ardente em seu interior. Essa chama é uma representação da energia e entusiasmo que Torchic possui.
+      
+      À medida que Torchic evolui, ele se transforma em Combusken no nível 16 e, posteriormente, em Blaziken no nível 36. Combusken adquire uma aparência mais imponente e ganha habilidades de luta, combinando os tipos Fogo e Lutador. Já Blaziken se torna um Pokémon poderoso, com habilidades de fogo e luta ainda mais impressionantes.
+      </p>
+  </section>
+  <section class="animacaomudkip">
+    <img src="c25ec81f1acb091bf192a51d25b36ea3.png">
+    <p class="textmudkip">Mudkip é um adorável Pokémon do tipo Água, conhecido por sua aparência cativante e habilidades aquáticas. Ele é um dos Pokémon iniciais da região de Hoenn, originário dos jogos Pokémon Ruby, Sapphire e Emerald.
+
+      Com seu corpo azul e uma barbatana na cabeça, Mudkip é capaz de nadar com destreza em rios e mares. Ele também pode se aventurar em terra firme usando suas nadadeiras dianteiras para se locomover. A lama que cobre seu corpo atua como uma camada protetora, mantendo-o hidratado e protegido.
+      
+      À medida que evolui, Mudkip se transforma em Marshtomp, ganhando uma aparência mais robusta e habilidades ampliadas. E, finalmente, ao atingir a sua forma final, Swampert, ele se torna um Pokémon poderoso, com força física e habilidades aquáticas ainda mais impressionantes.</p>
+  </section>
+</div>
+        <!-- 4° GERAÇÃO DOS POKEMONS (TREECKO, TORCHIC, MUDKIP)-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <p><strong>SINNOH</strong></p>
+  <div class="gen3">
+  </section>
+  <section class="animacaoturt">
+    <img src="Turtwig_DP.png">
+    <p class="textturt">Turtwig é um adorável Pokémon inicial da região de Sinnoh, apresentado nos jogos Pokémon Diamond, Pearl e Platinum. Ele é um Pokémon do tipo Planta e tem uma aparência baseada em uma tartaruga.
+
+      Turtwig é caracterizado por um casco marrom que cobre seu corpo e uma planta verde em sua cabeça, que cresce gradualmente à medida que ele evolui. Sua natureza calma e pacífica reflete a serenidade das tartarugas.
+      
+      Conforme Turtwig evolui, ele se transforma em Grotle no nível 18 e, posteriormente, em Torterra no nível 32. Grotle possui um casco maior e um crescimento significativo em seu corpo, enquanto Torterra se torna um Pokémon imponente com um grande casco e um ecossistema inteiro em seu dorso.
+      </p>
+  </section>
+  <section class="animacaochim">
+    <img src="Chimchar-Pokemon-Background-PNG.png">
+    <p class="textchim">Chimchar é um Pokémon inicial da região de Sinnoh, apresentado nos jogos Pokémon Diamond, Pearl e Platinum. Ele é um Pokémon do tipo Fogo, conhecido por sua aparência adorável e energética.
+
+      Chimchar se assemelha a um pequeno macaco com uma pelagem laranja e uma chama na ponta da cauda. Essa chama representa sua energia e entusiasmo constantes, características marcantes desse Pokémon.
+      
+      À medida que Chimchar evolui, ele se transforma em Monferno no nível 14 e, posteriormente, em Infernape no nível 36. Monferno adquire uma aparência mais ágil e ganha habilidades de luta, combinando os tipos Fogo e Lutador. Infernape se torna um Pokémon poderoso, com uma personalidade feroz e habilidades de fogo e luta ainda mais impressionantes.
+      </p>
+  </section>
+  <section class="animacaopip">
+    <img src="0393Piplup.png">
+    <p class="textpip">Piplup é um Pokémon inicial da região de Sinnoh, apresentado nos jogos Pokémon Diamond, Pearl e Platinum. Ele é um Pokémon do tipo Água, conhecido por sua aparência adorável e carismática.
+
+      Piplup se assemelha a um pequeno pinguim azul com uma penugem branca fofa em seu peito. Ele é conhecido por ser muito orgulhoso e determinado, exibindo uma personalidade forte apesar de seu tamanho.
+      
+      À medida que Piplup evolui, ele se transforma em Prinplup no nível 16 e, posteriormente, em Empoleon no nível 36. Prinplup adquire uma aparência mais elegante e ganha habilidades aquáticas ampliadas. Empoleon se torna um Pokémon imponente, com a combinação de tipos Água e Aço, apresentando uma aparência majestosa e habilidades de batalha versáteis.</p>
+  </section>
+</div>
+</div>
+<!-- 5° GERAÇÃO DOS POKEMONS (SNIVY, TEPIG, OSHAWOTT)-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<p><strong>UNOVA</strong></p>
+<div class="gen3">
+</section>
+<section class="animacaosnivy">
+<img src="snivy.png">
+<p class="textsnivy">O Snivy é um adorável Pokémon do tipo Grama originário da região de Unova. Ele é conhecido como o "Pokémon Serpente da Grama". Com seu corpo verde e alongado, ele se assemelha a uma serpente, mas com um rosto gracioso e expressão séria.
+
+  O Snivy possui habilidades notáveis, destacando-se pela sua velocidade e agilidade impressionantes. Sua cauda forte pode ser utilizada para desferir ataques rápidos contra seus oponentes. Além disso, ele possui a habilidade "Overgrow", que aumenta o poder de seus ataques do tipo Grama quando sua saúde está baixa.
+  
+  Ao evoluir, o Snivy se transforma em Servine no nível 17. E mais tarde, no nível 36, ele evolui novamente para a sua forma final, Serperior.
+</p>
+</section>
+<section class="animacaotepig">
+<img src="tepig.png">
+<p class="texttepig">Tepig é um Pokémon inicial da região de Unova, introduzido nos jogos Pokémon Black and White. Ele é um Pokémon do tipo Fogo, conhecido por sua aparência adorável e sua natureza valente.
+
+  Tepig se assemelha a um pequeno porco cor-de-laranja com listras pretas em seu corpo. Ele possui uma chama ardente no topo de sua cabeça, simbolizando sua energia e paixão.
+  
+  À medida que Tepig evolui, ele se transforma em Pignite no nível 17 e, posteriormente, em Emboar no nível 36. Pignite adquire uma aparência mais robusta e ganha habilidades de fogo e lutador. Emboar se torna um Pokémon imponente, com um corpo grande e musculoso e uma força formidável.
+</p>
+</section>
+<section class="animacaoosha">
+<img src="Oshawott-Pokemon-Background-PNG-Image.png">
+<p class="textosha">Oshawott é um Pokémon inicial da região de Unova, apresentado nos jogos Pokémon Black and White. Ele é um Pokémon do tipo Água, conhecido por sua aparência de lontra e carisma.
+
+  Oshawott possui uma pelagem azul e branca, lembrando uma combinação entre uma lontra e um samurai. Ele é frequentemente visto segurando uma concha em sua barriga, que também funciona como uma espada para ele.
+  
+  À medida que Oshawott evolui, ele se transforma em Dewott no nível 17 e, posteriormente, em Samurott no nível 36. Dewott mantém a aparência de uma lontra, mas agora com uma concha maior e uma espada mais refinada. Samurott se torna um Pokémon imponente, com uma aparência majestosa de samurai e habilidades de batalha poderosas.</p>
+</section>
+</div>
+<!-- 5° GERAÇÃO DOS POKEMONS (OSHAWOTT, SNIVY, )-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<p><strong>KALOS</strong></p>
+<div class="gen3">
+</section>
+<section class="animacaochespin">
+<img src="Chespin-Pokemon-PNG-Background.png">
+<p class="textchespin">O Snivy é um adorável Pokémon do tipo Grama originário da região de Unova. Ele é conhecido como o "Pokémon Serpente da Grama". Com seu corpo verde e alongado, ele se assemelha a uma serpente, mas com um rosto gracioso e expressão séria.
+
+  O Snivy possui habilidades notáveis, destacando-se pela sua velocidade e agilidade impressionantes. Sua cauda forte pode ser utilizada para desferir ataques rápidos contra seus oponentes. Além disso, ele possui a habilidade "Overgrow", que aumenta o poder de seus ataques do tipo Grama quando sua saúde está baixa.
+  
+  Ao evoluir, o Snivy se transforma em Servine no nível 17. E mais tarde, no nível 36, ele evolui novamente para a sua forma final, Serperior.
+</p>
+</section>
+<section class="animacaofanne">
+<img src="fanne.png">
+<p class="textfanne">Tepig é um Pokémon inicial da região de Unova, introduzido nos jogos Pokémon Black and White. Ele é um Pokémon do tipo Fogo, conhecido por sua aparência adorável e sua natureza valente.
+
+  Tepig se assemelha a um pequeno porco cor-de-laranja com listras pretas em seu corpo. Ele possui uma chama ardente no topo de sua cabeça, simbolizando sua energia e paixão.
+  
+  À medida que Tepig evolui, ele se transforma em Pignite no nível 17 e, posteriormente, em Emboar no nível 36. Pignite adquire uma aparência mais robusta e ganha habilidades de fogo e lutador. Emboar se torna um Pokémon imponente, com um corpo grande e musculoso e uma força formidável.
+</p>
+</section>
+<section class="animacaofrookie">
+<img src="Froakie-PNG-HD-Images.png">
+<p class="textfrookie">Oshawott é um Pokémon inicial da região de Unova, apresentado nos jogos Pokémon Black and White. Ele é um Pokémon do tipo Água, conhecido por sua aparência de lontra e carisma.
+
+  Oshawott possui uma pelagem azul e branca, lembrando uma combinação entre uma lontra e um samurai. Ele é frequentemente visto segurando uma concha em sua barriga, que também funciona como uma espada para ele.
+  
+  À medida que Oshawott evolui, ele se transforma em Dewott no nível 17 e, posteriormente, em Samurott no nível 36. Dewott mantém a aparência de uma lontra, mas agora com uma concha maior e uma espada mais refinada. Samurott se torna um Pokémon imponente, com uma aparência majestosa de samurai e habilidades de batalha poderosas.</p>
+</section>
+</div>
+</body>
+
+
